@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0513B2F524182A8C00876722 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0513B2F424182A8C00876722 /* ContactsViewController.swift */; };
 		05F3140E2410DA3B008F263D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3140D2410DA3B008F263D /* AppDelegate.swift */; };
 		05F314102410DA3B008F263D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3140F2410DA3B008F263D /* SceneDelegate.swift */; };
 		05F314122410DA3B008F263D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F314112410DA3B008F263D /* TabBarController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0513B2F424182A8C00876722 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		05F3140A2410DA3B008F263D /* Saucial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Saucial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05F3140D2410DA3B008F263D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05F3140F2410DA3B008F263D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				05F314162410DA3B008F263D /* Assets.xcassets */,
 				05F314182410DA3B008F263D /* LaunchScreen.storyboard */,
 				05F3141B2410DA3B008F263D /* Info.plist */,
+				0513B2F424182A8C00876722 /* ContactsViewController.swift */,
 			);
 			path = Saucial;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05F314122410DA3B008F263D /* TabBarController.swift in Sources */,
+				0513B2F524182A8C00876722 /* ContactsViewController.swift in Sources */,
 				05F3140E2410DA3B008F263D /* AppDelegate.swift in Sources */,
 				05F314102410DA3B008F263D /* SceneDelegate.swift in Sources */,
 			);
