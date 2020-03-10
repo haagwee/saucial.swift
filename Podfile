@@ -7,6 +7,7 @@ target 'Saucial' do
 
   # Pods for Saucial
   pod 'Klendario'
+  pod 'SwiftyContacts'
 
   target 'SaucialTests' do
     inherit! :search_paths

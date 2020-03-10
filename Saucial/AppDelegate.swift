@@ -8,12 +8,10 @@
 
 import UIKit
 import Klendario
+import SwiftyContacts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // Calendar Authorizations
@@ -25,6 +23,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("authorization granted!")
                 self?.createCalendarIfDoesntExist()
                 
+            }
+        }
+        
+        // Contact Authorizations
+        requestAccess { (response) in
+            if response {
+                print("Contacts Acess Granted")
+            } else {
+                print("Contacts Acess Denied")
             }
         }
 

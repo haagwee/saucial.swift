@@ -1,16 +1,20 @@
 PODS:
   - Klendario (1.0.1)
+  - SwiftyContacts (3.0.14)
 
 DEPENDENCIES:
   - Klendario
+  - SwiftyContacts
 
 SPEC REPOS:
   trunk:
     - Klendario
+    - SwiftyContacts
 
 SPEC CHECKSUMS:
   Klendario: ab2ad3b95ae695fd12b9094837bb35899cf0a2d9
+  SwiftyContacts: b1cc26a9bed08d3b1ff4ac19cebf5913e1362729
 
-PODFILE CHECKSUM: 63490be55e8b736627053ad8ce2577e23aaa95e7
+PODFILE CHECKSUM: 630f57b1df11e96d68d762ef3d877842d649a31f
 
 COCOAPODS: 1.9.0
