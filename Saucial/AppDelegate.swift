@@ -17,11 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // Calendar Authorizations
-        Klendario.requestAuthorization { (granted, status, error) in
+        Klendario.requestAuthorization { [weak self] (granted, status, error) in
             if let error = error {
                 print("error: \(error.localizedDescription)")
             } else {
                 print("authorization granted!")
+                self?.createCalendarIfDoesntExist()
+                
             }
         }
 
@@ -41,7 +43,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
 }
 
+private extension AppDelegate {
+    func checkCalendar() -> Bool {
+        let calendars = Klendario.getCalendars()
+        return calendars.contains(where: { $0.title == "Saucial" })
+    }
+
+    func createCalendarIfDoesntExist() {
+        if checkCalendar() { return }
+
+        let calendar = Klendario.newCalendar()
+        calendar.title = "Saucial"
+        calendar.save()
+    }
+}
