@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Klendario
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,7 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // Calendar Authorizations
+        Klendario.requestAuthorization { (granted, status, error) in
+            if let error = error {
+                print("error: \(error.localizedDescription)")
+            } else {
+                print("authorization granted!")
+            }
+        }
+
         return true
     }
 

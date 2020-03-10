@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: b5daf6e6f2fd642917cfe5cb6110f920b410967c
+PODS:
+  - Klendario (1.0.1)
+
+DEPENDENCIES:
+  - Klendario
+
+SPEC REPOS:
+  trunk:
+    - Klendario
+
+SPEC CHECKSUMS:
+  Klendario: ab2ad3b95ae695fd12b9094837bb35899cf0a2d9
+
+PODFILE CHECKSUM: 63490be55e8b736627053ad8ce2577e23aaa95e7
 
 COCOAPODS: 1.9.0

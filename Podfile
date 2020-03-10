@@ -6,6 +6,7 @@ target 'Saucial' do
   use_frameworks!
 
   # Pods for Saucial
+  pod 'Klendario'
 
   target 'SaucialTests' do
     inherit! :search_paths

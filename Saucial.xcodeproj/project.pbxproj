@@ -142,6 +142,7 @@
 				05F314062410DA3B008F263D /* Sources */,
 				05F314072410DA3B008F263D /* Frameworks */,
 				05F314082410DA3B008F263D /* Resources */,
+				5761AB88440C23C7F9033371 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,6 +231,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5761AB88440C23C7F9033371 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Saucial/Pods-Saucial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Saucial/Pods-Saucial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Saucial/Pods-Saucial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8DB4D7DE3E78F7B54468DA8A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
