@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // Calendar Authorizations
+        // TODO: (dunyakirkali) Extract to CalendarController
         Klendario.requestAuthorization { [weak self] (granted, status, error) in
             if let error = error {
                 print("error: \(error.localizedDescription)")
@@ -45,6 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
+// TODO: (dunyakirkali) Extract to CalendarController
 private extension AppDelegate {
     func checkCalendar() -> Bool {
         let calendars = Klendario.getCalendars()
