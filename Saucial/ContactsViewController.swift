@@ -11,7 +11,11 @@ import Contacts
 import SwiftyContacts
 
 class ContactsViewController: UITableViewController {
-    private var contacts = [CNContact]()
+    private var contacts = [CNContact]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +24,6 @@ class ContactsViewController: UITableViewController {
             switch result{
                 case .success(response: let contacts):
                     self.contacts = contacts
-                    self.tableView.reloadData()
                     break
                 case .failure(error: let error):
                     print(error)
