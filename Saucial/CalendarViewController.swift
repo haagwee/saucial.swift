@@ -20,6 +20,7 @@ class CalendarViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // TODO: (dunyakirkali) Move to CalendarController
         let calendars = Klendario.getCalendars()
         let saucialCalendar = calendars.first(where: {
             $0.title == "Saucial"
