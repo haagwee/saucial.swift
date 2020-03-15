@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Contacts View Controller-->
+        <!--Contacts-->
         <scene sceneID="M1l-pW-gax">
             <objects>
                 <tableViewController id="bbu-0q-FAa" customClass="ContactsViewController" customModule="Saucial" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,13 +30,13 @@
                             <outlet property="delegate" destination="bbu-0q-FAa" id="lUi-f5-yBV"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="A0s-LS-bBp"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person" catalog="system" id="A0s-LS-bBp"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNj-wx-S9a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1620" y="720"/>
         </scene>
-        <!--Item-->
+        <!--Calender-->
         <scene sceneID="JlB-3g-fHu">
             <objects>
                 <tableViewController id="X4x-aN-vHb" sceneMemberID="viewController">
@@ -59,7 +59,7 @@
                             <outlet property="delegate" destination="X4x-aN-vHb" id="gB8-xh-T5Q"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="HZ1-Iq-CjR"/>
+                    <tabBarItem key="tabBarItem" title="Calender" image="calendar" catalog="system" id="HZ1-Iq-CjR"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="68R-RU-D2P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -75,7 +75,7 @@
                         <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="miW-nd-JY1"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Overview" id="mzV-9k-Fdb"/>
+                    <tabBarItem key="tabBarItem" title="Overview" image="circle.bottomthird.split" catalog="system" id="mzV-9k-Fdb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8C6-Uv-pAD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -101,4 +101,9 @@
             <point key="canvasLocation" x="-1620" y="-68"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="calendar" catalog="system" width="64" height="52"/>
+        <image name="circle.bottomthird.split" catalog="system" width="64" height="60"/>
+        <image name="person" catalog="system" width="64" height="58"/>
+    </resources>
 </document>
