@@ -7,34 +7,21 @@
 //
 
 import UIKit
-import Klendario
-import SwiftyContacts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // Calendar Authorizations
-        // TODO: (dunyakirkali) Extract to CalendarController
-        Klendario.requestAuthorization { [weak self] (granted, status, error) in
-            if let error = error {
-                print("error: \(error.localizedDescription)")
-            } else {
-                print("authorization granted!")
-                self?.createCalendarIfDoesntExist()
-                
-            }
-        }
+        let calendarController = CalendarController()
+        calendarController.delegate = self
+        calendarController.requestAuthorization()
         
         // Contact Authorizations
-        requestAccess { (response) in
-            if response {
-                print("Contacts Acess Granted")
-            } else {
-                print("Contacts Acess Denied")
-            }
-        }
-
+        let contactsController = ContactsController()
+        contactsController.delegate = self
+        contactsController.requestAuthorization()
+        
         return true
     }
 
@@ -53,18 +40,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
-// TODO: (dunyakirkali) Extract to CalendarController
-private extension AppDelegate {
-    func checkCalendar() -> Bool {
-        let calendars = Klendario.getCalendars()
-        return calendars.contains(where: { $0.title == "Saucial" })
+extension AppDelegate: CalendarControllerDelegate {
+    func userDidAllowAccess(_ controller: CalendarController) {
+        controller.createCalendarIfDoesntExist()
     }
+    
+    func userDidDenyAccess(_ controller: CalendarController, with error: Error) {
+        print(error)
+    }
+}
 
-    func createCalendarIfDoesntExist() {
-        if checkCalendar() { return }
-
-        let calendar = Klendario.newCalendar()
-        calendar.title = "Saucial"
-        calendar.save()
+extension AppDelegate: ContactsControllerDelegate {
+    func userDidAllowAccess(_ controller: ContactsController) {
+        print("Allow")
+    }
+    
+    func userDidDenyAccess(_ controller: ContactsController) {
+        print("Deny")
     }
 }
