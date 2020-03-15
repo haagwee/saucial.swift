@@ -17,8 +17,8 @@ class ContactsViewController: UITableViewController {
         }
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         fetchContacts(completionHandler: { (result) in
             switch result{

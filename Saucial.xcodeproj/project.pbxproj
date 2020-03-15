@@ -11,6 +11,8 @@
 		057A0654241E58520084DCA8 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057A0653241E58520084DCA8 /* CalendarViewController.swift */; };
 		057A0656241E5B140084DCA8 /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057A0655241E5B140084DCA8 /* CalendarController.swift */; };
 		057A0658241E5D360084DCA8 /* ContactsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057A0657241E5D360084DCA8 /* ContactsController.swift */; };
+		057A065C241E61080084DCA8 /* EventCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057A065B241E61080084DCA8 /* EventCreationViewController.swift */; };
+		057A065E241E614C0084DCA8 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057A065D241E614C0084DCA8 /* OverviewViewController.swift */; };
 		05F3140E2410DA3B008F263D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3140D2410DA3B008F263D /* AppDelegate.swift */; };
 		05F314102410DA3B008F263D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3140F2410DA3B008F263D /* SceneDelegate.swift */; };
 		05F314122410DA3B008F263D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F314112410DA3B008F263D /* TabBarController.swift */; };
@@ -37,6 +39,8 @@
 		057A0653241E58520084DCA8 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		057A0655241E5B140084DCA8 /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		057A0657241E5D360084DCA8 /* ContactsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsController.swift; sourceTree = "<group>"; };
+		057A065B241E61080084DCA8 /* EventCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCreationViewController.swift; sourceTree = "<group>"; };
+		057A065D241E614C0084DCA8 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		05F3140A2410DA3B008F263D /* Saucial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Saucial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05F3140D2410DA3B008F263D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05F3140F2410DA3B008F263D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				057A0653241E58520084DCA8 /* CalendarViewController.swift */,
 				057A0655241E5B140084DCA8 /* CalendarController.swift */,
 				057A0657241E5D360084DCA8 /* ContactsController.swift */,
+				057A065B241E61080084DCA8 /* EventCreationViewController.swift */,
+				057A065D241E614C0084DCA8 /* OverviewViewController.swift */,
 			);
 			path = Saucial;
 			sourceTree = "<group>";
@@ -313,10 +319,12 @@
 			files = (
 				057A0658241E5D360084DCA8 /* ContactsController.swift in Sources */,
 				057A0654241E58520084DCA8 /* CalendarViewController.swift in Sources */,
+				057A065E241E614C0084DCA8 /* OverviewViewController.swift in Sources */,
 				057A0656241E5B140084DCA8 /* CalendarController.swift in Sources */,
 				05F314122410DA3B008F263D /* TabBarController.swift in Sources */,
 				0513B2F524182A8C00876722 /* ContactsViewController.swift in Sources */,
 				05F3140E2410DA3B008F263D /* AppDelegate.swift in Sources */,
+				057A065C241E61080084DCA8 /* EventCreationViewController.swift in Sources */,
 				05F314102410DA3B008F263D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,20 +1,32 @@
 PODS:
+  - Eureka (5.2.0)
   - Klendario (1.0.1)
+  - Reusable (4.1.1):
+    - Reusable/Storyboard (= 4.1.1)
+    - Reusable/View (= 4.1.1)
+  - Reusable/Storyboard (4.1.1)
+  - Reusable/View (4.1.1)
   - SwiftyContacts (3.0.14)
 
 DEPENDENCIES:
+  - Eureka
   - Klendario
+  - Reusable
   - SwiftyContacts
 
 SPEC REPOS:
   trunk:
+    - Eureka
     - Klendario
+    - Reusable
     - SwiftyContacts
 
 SPEC CHECKSUMS:
+  Eureka: 820a761c700f6eaab3b60758f138e0d9b99072b3
   Klendario: ab2ad3b95ae695fd12b9094837bb35899cf0a2d9
+  Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
   SwiftyContacts: b1cc26a9bed08d3b1ff4ac19cebf5913e1362729
 
-PODFILE CHECKSUM: 630f57b1df11e96d68d762ef3d877842d649a31f
+PODFILE CHECKSUM: 144ab30d42a21c1a7772b735b99f704257d742ae
 
 COCOAPODS: 1.9.0

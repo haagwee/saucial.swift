@@ -8,10 +8,11 @@ target 'Saucial' do
   # Pods for Saucial
   pod 'Klendario'
   pod 'SwiftyContacts'
+  pod 'Reusable'
+  pod 'Eureka'
 
   target 'SaucialTests' do
     inherit! :search_paths
     # Pods for testing
   end
-
 end

@@ -17,8 +17,8 @@ class CalendarViewController: UITableViewController {
         }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         // TODO: (dunyakirkali) Move to CalendarController
         let calendars = Klendario.getCalendars()
